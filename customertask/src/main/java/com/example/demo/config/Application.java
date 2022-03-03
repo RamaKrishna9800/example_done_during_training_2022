@@ -12,6 +12,8 @@ public class Application {
 	
 	@Bean     //describe how the object is created
 	public Invoice inv1(@Qualifier("ram")Customer rama) {
+		
+		System.out.println("hii");
 		return new Invoice(1,2000,rama);
 		
 	}
